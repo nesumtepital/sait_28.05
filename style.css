@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html {
+  display:flex;
+  width:100%;
+  height:100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color:#555;
+
+}
+p{
+    color: #555;
+}
+.btn2{
+    display: inline-block;
+    background: #ff523b;
+    color: rgb(0, 0, 0);
+    padding: 8px 30px;
+
+    border-radius: 10px;
+    transition:background 0.5s;
+}
+.btn2:hover{
+    background: #e27171;
+}
+.rec-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.rec-pop.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.rec-pop-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.rec-pop-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.rec-pop-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.img-btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.rec-pop-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.recipes{
+  display: flex; 
+  flex-wrap: wrap;
+}
+.recipe{
+  flex: 1;
+  padding: 50px;
+}
+
+.img-txt{
+  color:#fff;
+
+}
+.img-img {
+  border-radius: 8px;
+  width: 450px;
+  height: 340px;
+}
+
+
